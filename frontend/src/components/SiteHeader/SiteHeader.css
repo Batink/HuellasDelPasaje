@@ -1,0 +1,22 @@
+.site-header {
+  --focus-color: var(--color-white);
+  position: relative;
+  z-index: var(--z-header);
+  background: var(--color-ink);
+  color: var(--color-white);
+}
+
+.site-header__brand {
+  display: flex;
+  justify-content: center;
+  padding-block: clamp(0.75rem, 1.6vw, 1.25rem);
+}
+
+.site-header__logo-link {
+  display: block;
+}
+
+.site-header__logo {
+  width: auto;
+  height: clamp(2.75rem, 4.6vw, 4.2rem);
+}

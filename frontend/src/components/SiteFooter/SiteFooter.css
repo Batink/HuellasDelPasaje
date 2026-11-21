@@ -1,0 +1,7 @@
+.site-footer {
+  --focus-color: var(--color-white);
+  min-height: clamp(6rem, 13.7vw, 12.5rem);
+  padding-inline: var(--gutter);
+  background: var(--color-red);
+  color: var(--color-white);
+}
