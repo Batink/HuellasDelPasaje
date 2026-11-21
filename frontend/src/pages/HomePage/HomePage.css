@@ -1,0 +1,8 @@
+/* Área oscura del mockup (~84 % del ancho de alto) todavía sin contenido */
+.home-pending {
+  --focus-color: var(--color-white);
+  min-height: clamp(20rem, 84vw, 75rem);
+  padding-inline: var(--gutter);
+  background: var(--color-ink);
+  color: var(--color-white);
+}
