@@ -14,9 +14,10 @@
   --color-surface: #d4d6d6;
   --color-white: #ffffff;
   --color-line: #8f8f8d;
-  --color-placeholder-text: #6b6b6b;
+  --color-placeholder-text: #1D1D1B;
 
   /* Tipografía */
+  /* font-family: 'Times New Roman', Times, serif; */
   --font-sans: 'Satoshi', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --fw-regular: 400;
   --fw-medium: 500;

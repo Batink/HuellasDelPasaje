@@ -18,5 +18,5 @@
 
 .site-header__logo {
   width: auto;
-  height: clamp(2.75rem, 4.6vw, 4.2rem);
+  height: clamp(6.75rem, 4.6vw, 4.2rem);
 }
