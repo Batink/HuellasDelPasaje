@@ -1,5 +1,5 @@
 // TODO: reemplazar por la ilustración final (SVG) conservando el nombre del archivo.
-import illustrationUrl from '../../assets/images/footer-illustration-placeholder.svg'
+import illustrationUrl from '../../assets/images/huellasfooter.svg'
 import './SiteFooter.css'
 
 export default function SiteFooter() {

@@ -30,7 +30,7 @@
   --fw-display: var(--fw-black);
 
   --fs-nav: clamp(0.875rem, 1.1vw, 1rem);
-  --fs-body: clamp(0.9375rem, 1.3vw, 1.17rem);
+  --fs-body: clamp(0.9475rem, 1.4vw, 1.23rem);
   --fs-display: clamp(1.875rem, 3.8vw, 3.42rem);
   --fs-marquee: clamp(1rem, 1.6vw, 1.44rem);
   --fs-card-title: clamp(0.875rem, 1.35vw, 1.2rem);

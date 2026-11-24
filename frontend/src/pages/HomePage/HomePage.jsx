@@ -2,7 +2,7 @@ import Hero from '../../components/Hero/Hero.jsx'
 import MarqueeBand from '../../components/MarqueeBand/MarqueeBand.jsx'
 import CategoryGrid from '../../components/CategoryGrid/CategoryGrid.jsx'
 // TODO: reemplazar por la ilustración final (SVG) conservando el nombre del archivo.
-import illustrationUrl from '../../assets/images/hero-illustration-placeholder.svg'
+import illustrationUrl from '../../assets/images/huellashero.svg'
 import { categories } from '../../data/categories.mock.js'
 import './HomePage.css'
 
