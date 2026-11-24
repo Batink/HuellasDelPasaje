@@ -6,7 +6,7 @@ export default function CategoryGrid({ categories }) {
     <ul className="category-grid" role="list">
       {categories.map((category) => (
         <li key={category.id}>
-          <CategoryCard name={category.name} imageSrc={category.imageSrc} imageAlt={category.imageAlt} />
+          <CategoryCard name={category.name} imageSrc={category.imageSrc} />
         </li>
       ))}
     </ul>

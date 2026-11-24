@@ -10,4 +10,5 @@ export const navMenus = [
   { id: 'fotografias', label: 'Fotografías', options: placeholderOptions },
   { id: 'flayers', label: 'Flayers', options: placeholderOptions },
   { id: 'material-musical', label: 'Material Musical', options: placeholderOptions },
+  { id: 'revistas', label: 'Revistas', options: placeholderOptions },
 ]

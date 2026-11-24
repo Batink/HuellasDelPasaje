@@ -1,0 +1,56 @@
+.marquee-band {
+  display: flex;
+  align-items: center;
+  /* 90 px a 1440 px */
+  min-height: var(--h-band);
+  overflow: hidden;
+  background: var(--color-ink);
+  color: var(--color-white);
+}
+
+.marquee-band__track {
+  display: flex;
+  flex: none;
+  width: max-content;
+  animation: marquee-scroll var(--marquee-duration, 60s) linear infinite;
+}
+
+.marquee-band:hover .marquee-band__track {
+  animation-play-state: paused;
+}
+
+.marquee-band__group {
+  display: flex;
+  flex: none;
+}
+
+.marquee-band__item {
+  flex: none;
+  padding-inline-end: clamp(1.5rem, 2.2vw, 2rem);
+  font-size: var(--fs-marquee);
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marquee-band__item--sans {
+  font-weight: var(--fw-bold);
+}
+
+.marquee-band__item--graffiti {
+  font-family: var(--font-graffiti);
+  font-weight: var(--fw-regular);
+}
+
+/* Dos grupos idénticos: desplazar -50 % de la pista deja el bucle sin saltos */
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-band__track {
+    animation: none;
+  }
+}

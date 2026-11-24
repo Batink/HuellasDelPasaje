@@ -1,10 +1,12 @@
 /*
- * Satoshi (Fontshare). Los archivos NO están versionados: copia los .woff2
+ * Fuentes locales. Los archivos NO están versionados: copia los .woff2
  * a frontend/public/fonts/ con estos nombres exactos (ver public/fonts/README.md).
  * Mientras no existan, se usa el fallback de --font-sans.
  *
- * Mapeo de pesos según el mockup:
- *   Regular → navegación · Medium → fecha y párrafo · Bold → títulos de sección · Black → título principal
+ * Satoshi, pesos según el diseño:
+ *   Regular → navegación · Medium → párrafo y títulos de tarjeta
+ *   Bold → "Colecciones destacadas" (versión sans) · Black → título principal
+ * Graffiti → página activa en la navbar, "(1984-2008)" y "Colecciones destacadas" (versión graffiti)
  */
 @font-face {
   font-family: 'Satoshi';
@@ -34,6 +36,14 @@
   font-family: 'Satoshi';
   src: url('/fonts/Satoshi-Black.woff2') format('woff2');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graffiti';
+  src: url('/fonts/Graffiti.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import MainNav from '../MainNav/MainNav.jsx'
-// TODO: reemplazar por el logo final (SVG) conservando el nombre del archivo.
 import logoUrl from '../../assets/images/logo1.svg'
 import './SiteHeader.css'
 
@@ -13,8 +12,8 @@ export default function SiteHeader() {
             className="site-header__logo"
             src={logoUrl}
             alt="Huellas del Pasaje"
-            width="208"
-            height="100"
+            width="138"
+            height="65"
           />
         </Link>
       </div>
