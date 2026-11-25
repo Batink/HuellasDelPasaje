@@ -1,7 +1,7 @@
 .main-nav {
   --focus-color: var(--color-white);
   padding-inline: var(--gutter);
-  border-top: 1px solid var(--color-line);
+  border-block: 1px solid var(--color-line);
   background: var(--color-ink);
   color: var(--color-white);
   font-size: var(--fs-nav);
@@ -16,13 +16,14 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
-  min-height: clamp(2.5rem, 3.7vw, 3.3rem);
+  /* La altura total de la nav (50 px a 1440 px) incluye sus dos líneas */
+  min-height: calc(var(--h-nav) - 2px);
 }
 
 .main-nav__list {
   display: flex;
   align-items: center;
-  gap: clamp(0.25rem, 1vw, 1rem);
+  gap: clamp(1rem, 3.4vw, 3.0625rem);
 }
 
 .main-nav__item {
@@ -33,9 +34,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
-  padding: 0.3em 0.9em;
-  border: 1px solid transparent;
-  border-radius: var(--radius-oval);
+  padding: 0.3em 0;
+  border: 0;
   background: none;
   font-weight: var(--fw-regular);
   line-height: 1.2;
@@ -47,9 +47,10 @@
   text-underline-offset: 0.3em;
 }
 
-/* Página activa: óvalo alrededor del texto, como en el mockup */
+/* Página activa: se marca con la tipografía graffiti, como en el mockup */
 .main-nav__link[aria-current='page'] {
-  border-color: var(--color-white);
+  font-family: var(--font-graffiti);
+  font-weight: var(--fw-regular);
 }
 
 .main-nav__chevron {
@@ -137,7 +138,7 @@
   .main-nav__submenu {
     position: static;
     min-width: 0;
-    margin: 0 0 var(--space-2) 0.9em;
+    margin: 0 0 var(--space-2) 1em;
     padding-block: 0;
     border-width: 0 0 0 1px;
   }

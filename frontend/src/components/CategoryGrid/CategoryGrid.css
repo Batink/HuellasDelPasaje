@@ -1,8 +1,12 @@
 .category-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(2px, 0.4vw, 6px);
-  padding: clamp(1.5rem, 8.5vw, 7.7rem) var(--gutter-inset) clamp(2rem, 10.4vw, 9.4rem);
+  /* Sin esto las filas se estiran hasta llenar el min-height */
+  align-content: start;
+  gap: clamp(0.75rem, 1.2vw, 1.1rem) clamp(2px, 0.5vw, 7px);
+  /* 520 px a 1440 px */
+  min-height: var(--h-collections);
+  padding: clamp(1.5rem, 4.2vw, 3.75rem) var(--gutter-inset) clamp(1.5rem, 6vw, 5rem);
   background: var(--color-white);
 }
 
@@ -10,5 +14,6 @@
 @media (max-width: 56rem) {
   .category-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 0;
   }
 }

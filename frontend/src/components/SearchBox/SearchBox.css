@@ -3,7 +3,7 @@
   align-items: center;
   gap: var(--space-2);
   width: 100%;
-  max-width: clamp(11rem, 19vw, 17rem);
+  max-width: clamp(11rem, 19.25vw, 17.3rem);
   padding: 0.2rem 0.4rem 0.2rem 0.9rem;
   border-radius: var(--radius-pill);
   background: var(--color-white);

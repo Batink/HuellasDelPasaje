@@ -1,7 +1,12 @@
-// TODO: reemplazar por los nombres reales de las categorías cuando existan.
+// TODO: reemplazar por las colecciones reales (y sus ilustraciones SVG finales).
+import kulturaHipHop from '../assets/images/categories/kultura.svg'
+import industriaMusical from '../assets/images/categories/cassette.svg'
+import culturaBBoy from '../assets/images/categories/bboy.svg'
+import culturaGraffiti from '../assets/images/categories/graff.svg'
+
 export const categories = [
-  { id: 'categoria-1', name: 'Categoría 1' },
-  { id: 'categoria-2', name: 'Categoría 2' },
-  { id: 'categoria-3', name: 'Categoría 3' },
-  { id: 'categoria-4', name: 'Categoría 4' },
+  { id: 'kultura-hip-hop', name: 'Kultura Hip Hop', imageSrc: kulturaHipHop },
+  { id: 'industria-musical', name: 'Industria Musical', imageSrc: industriaMusical },
+  { id: 'cultura-b-boy', name: 'Cultura B-Boy', imageSrc: culturaBBoy },
+  { id: 'cultura-graffiti', name: 'Cultura Graffiti', imageSrc: culturaGraffiti },
 ]

@@ -1,24 +1,19 @@
 .hero {
   --focus-color: var(--color-white);
-  /* Cuánto se aleja la ilustración del borde derecho y cuánto invade la franja oscura de abajo */
-  --hero-art-inset: clamp(0.5rem, 2.6vw, 2.5rem);
-  --hero-art-overlap: clamp(1.25rem, 2.8vw, 2.75rem);
-
-  position: relative;
-  z-index: var(--z-hero);
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  column-gap: clamp(1rem, 3vw, 3rem);
-  align-items: start;
-  padding: clamp(2rem, 5.2vw, 4.75rem) var(--gutter) 0;
-  /* border-block: 1px solid var(--color-line); */
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 1fr);
+  column-gap: clamp(1rem, 4vw, 3.6rem);
+  align-items: center;
+  /* 540 px a 1440 px */
+  min-height: var(--h-hero);
+  padding: clamp(1.5rem, 4.2vw, 3.75rem) var(--gutter);
   background: var(--color-red);
   color: var(--color-white);
 }
 
 .hero__title {
   font-size: var(--fs-display);
-  font-weight: var(--fw-black);
+  font-weight: var(--fw-display);
   line-height: var(--lh-display);
   text-transform: uppercase;
 }
@@ -27,41 +22,37 @@
   display: block;
 }
 
+/* Fecha en tipografía graffiti */
 .hero__date {
   display: block;
-  font-size: 0.85em;
-  font-weight: var(--fw-medium);
+  font-family: var(--font-graffiti);
+  font-size: 0.95em;
+  font-weight: var(--fw-regular);
   text-transform: none;
 }
 
-.hero__aside {
-  display: flex;
-  flex-direction: column;
-}
-
 .hero__description {
+  max-width: 40rem;
+  margin-top: clamp(0.75rem, 1.1vw, 1rem);
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
   line-height: var(--lh-body);
 }
 
 .hero__illustration {
-  position: relative;
-  z-index: var(--z-hero-art);
-  align-self: flex-end;
-  width: clamp(7.5rem, 20vw, 20rem);
+  width: 100%;
+  max-width: 36rem;
   height: auto;
-  margin-top: clamp(1rem, 2vw, 2rem);
-  margin-right: calc((var(--gutter) - var(--hero-art-inset)) * -1);
-  /* Sobresale por debajo del hero y se superpone a la franja "Categorías" */
-  margin-bottom: calc(var(--hero-art-overlap) * -1);
+  justify-self: end;
 }
 
 /* Compacto: columnas apiladas (ver breakpoint en tokens.css) */
 @media (max-width: 56rem) {
   .hero {
     grid-template-columns: minmax(0, 1fr);
-    row-gap: var(--space-6);
+    row-gap: var(--space-8);
+    min-height: 0;
+    padding-block: var(--space-8);
   }
 
   .hero__title-line {
@@ -69,6 +60,7 @@
   }
 
   .hero__illustration {
-    width: clamp(7.5rem, 28vw, 14rem);
+    max-width: 28rem;
+    justify-self: center;
   }
 }

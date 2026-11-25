@@ -8,15 +8,17 @@
 
 .site-header__brand {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-block: clamp(0.75rem, 1.6vw, 1.25rem);
+  min-height: var(--h-header);
 }
 
 .site-header__logo-link {
   display: block;
 }
 
+/* logo1.svg mide ~137 x 65 px (el tamaño del mockup) sobre una franja de 100 px a 1440 px */
 .site-header__logo {
   width: auto;
-  height: clamp(6.75rem, 4.6vw, 4.2rem);
+  height: clamp(2.5rem, 4.54vw, 4.0875rem);
 }

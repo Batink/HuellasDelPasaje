@@ -1,8 +1,17 @@
 .site-footer {
   /* align-items: center; */
   --focus-color: var(--color-white);
-  min-height: clamp(6rem, 13.7vw, 12.5rem);
-  padding-inline: var(--gutter);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* 455 px a 1440 px */
+  min-height: var(--h-footer);
+  padding: clamp(1.5rem, 4.65vw, 4.2rem) var(--gutter-inset) clamp(1.25rem, 3.55vw, 3.2rem);
   background: var(--color-red);
   color: var(--color-white);
+}
+
+.site-footer__illustration {
+  width: clamp(6rem, 18.8vw, 16.9375rem);
+  height: auto;
 }
